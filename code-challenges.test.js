@@ -91,20 +91,23 @@ describe("remaindThree", () => {
   })
 })
 //create a function takes array in mixed data
-// output:remainders of the number when divided by 3.
+//output:remainders of the number when divided by 3.
 //separate string & boolean values
 //Divide numbers byn 3 to
-//Return- Only Remainders/
+//Return- Only Remainders using modulus
+
 const remaindThree =(arr)=>{
   let numerArr =arr.filter(value=>{
-    return typeof value === "number"
+    return typeof value === "number"  
   })
-  for(let i =0; i < numerArr.length; i++){
-    return value [i] %3
-  }
+   return numerArr.map(value =>{
+   return value %3 
+  })
+  
+  
+}
   
 
-}
 //1.Create a function 
 //2. Separate string and boolean values
 //3. Divide numbers by 3
